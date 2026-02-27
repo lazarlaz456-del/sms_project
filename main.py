@@ -15,7 +15,11 @@ class Weather_App(tk.Tk):
         
         self.get_weather_data_button = ctk.CTkButton(self, text="Show Forecast", fg_color="#817fa0", hover_color="#9A98B8", text_color="#2B2B2F", 
                                                      font=("Times New Roman", 20, "italic"), border_width=1, border_color="#2B2B2F", anchor="center")
-        self.get_weather_data_button.grid(row=0, column=4)
+        self.get_weather_data_button.grid(row=1, column=4)
+
+        self.exit_button = ctk.CTkButton(self, text="Exit Application", fg_color="#8c5f6a", hover_color="#b07d88", text_color="#2B2B2F",
+                                         font=("Times New Roman", 20, "italic"), border_width=1, border_color="#2B2B2F", anchor="center")
+        self.exit_button.grid(row=0, column=4)
 
 app = Weather_App()
 app.mainloop()
